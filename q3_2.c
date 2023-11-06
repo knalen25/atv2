@@ -37,12 +37,14 @@ int main() {
                     resultado[i][j] += m1[i][k] * m2[k][j];
                 }
             }
-            printf("%d", resultado[i][j]);
-            if (j < 3) {
-                printf(" ");
-            } else {
+            printf("%4d", resultado[i][j]);
+            /*if (j < 3) {
+                printf("");
+            }*/ if (j==3)
+            {
                 printf("\n");
             }
+            
         }
     }
 
